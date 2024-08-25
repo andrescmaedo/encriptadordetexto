@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eaf2e3;
+    background-image: url('images/background.jpg'); /* Ruta de la imagen de fondo */
+    background-size: cover; /* Hace que la imagen cubra todo el fondo */
+    background-position: center; /* Centra la imagen en la pantalla */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.container {
+    display: flex;
+    width: 80%;
+    max-width: 1200px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.left-panel, .right-panel {
+    width: 50%;
+    padding: 20px;
+}
+
+.left-panel {
+    background-color: #f4f7fc;
+}
+
+h1 {
+    color: #2e7d32;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+textarea {
+    width: 90%; /* Ajuste para hacer la caja más pequeña */
+    height: 150px; /* Reducir la altura */
+    padding: 10px;
+    border: 1px solid #388e3c;
+    border-radius: 5px;
+    font-size: 1em;
+    resize: none;
+    margin-right: 5%; /* Agrega margen a la derecha para alejar del borde */
+    display: block; /* Para mantener el textarea centrado en su contenedor */
+    margin: 0 auto; /* Centrar el textarea */
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espacio entre botones */
+    margin-top: 20px;
+}
+
+button {
+    width: 150px;
+    padding: 10px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#encryptButton {
+    background-color: #2e7d32;
+    color: white;
+}
+
+#decryptButton {
+    background-color: #c8e6c9;
+    color: #2e7d32;
+}
+
+.note {
+    font-size: 0.8em;
+    color: #666;
+    margin-top: 10px;
+    text-align: center; /* Centra el texto de la nota */
+}
+
+.right-panel {
+    background-color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.output-container {
+    width: 80%;
+}
+
+#outputMessage {
+    font-size: 1.2em;
+    color: #2e7d32;
+    margin-bottom: 10px;
+}
+
+.subtext {
+    font-size: 0.9em;
+    color: #666;
+}
+
+#copyButton {
+    background-color: #2e7d32;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
